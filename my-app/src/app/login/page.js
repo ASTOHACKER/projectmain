@@ -82,25 +82,29 @@ export default function LoginPage() {
                   </div>
                 )}
                 <form onSubmit={handleSubmit} className="space-y-4">
+
                   {/* ช่องกรอกอีเมล */}
                   <Input
                     type="email"
-                    placeholder="อีเมล"
+                    placeholder="Email"
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     isDisabled={loginProgress}
+                    className="dark:text-black"
+                    
                   />
                   {/* ช่องกรอกรหัสผ่าน */}
                   <Input
                     type="password"
-                    placeholder="รหัสผ่าน"
+                    placeholder="Password"
                     name="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
                     isDisabled={loginProgress}
+                    className="dark:text-black"
                   />
                   {/* ปุ่ม submit */}
                   <Button

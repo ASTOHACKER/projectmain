@@ -78,8 +78,8 @@ export default function RegisterPage() {
         <main className="max-w-6xl mx-auto p-8 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg mt-8">
           <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
             <h1 className="text-center text-indigo-600 text-4xl font-bold mb-8">สมัครสมาชิก</h1>
-            <p className="text-center text-gray-500 mt-2">ยินดีต้อนรับกลับมา</p>ก
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <p className="text-center text-gray-500 mt-2">ยินดีต้อนรับกลับมา</p>
+            <form onSubmit={handleSubmit} className="space-y-4 dark:text-black">
               {error && (
                 <div className="bg-red-100 text-red-600 p-3 rounded-lg text-center">
                   {error}
